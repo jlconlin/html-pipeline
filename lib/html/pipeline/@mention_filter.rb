@@ -129,7 +129,7 @@ module HTML
         result[:mentioned_usernames] |= [login]
 
         url = base_url.dup
-        url << '/' unless url =~ /[\/~]\z/
+        # url << '/' unless url =~ /[\/~]\z/
 
         "<a href='#{url << login}' class='user-mention'>" \
           "@#{login}" \
